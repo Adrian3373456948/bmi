@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>kalkulator bmi</title>
+    <script>
+        function oblicz()
+        
+        
+        
+        {
+            var waga = document.getElementById("waga").value;
+            var wzrost = document.getElementById("wzrost").value;
+            var bmi = waga/(wzrost*wzrost);
+            document.getElementById("wynik").innerHTML=bmi*10000;
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</head>
+<body>
+    <h1>oblicz swoje BMI</h1>
+    <label for "waga">podaj swoją wagę;</label>
+    <input type="number" id="waga" value=0>
+    <label for "wzrost">podaj swOj wzrost;</label>
+    <input type="number" id="wzrost" value=0>
+    <input type="button" value="oblicz bmi" onclick="oblicz()">
+    <div id="wynik"> tu bedzie wynik</div>
+</body>
+</html>
